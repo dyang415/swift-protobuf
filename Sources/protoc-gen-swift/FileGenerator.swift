@@ -181,6 +181,7 @@ class FileGenerator {
                 m.generateRuntimeSupport(printer: &p, file: self, parent: nil)
             }
         }
+        p.print("// @@protoc_insertion_point(global_scope)")
     }
 
     private func generateVersionCheck(printer p: inout CodePrinter) {
